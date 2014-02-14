@@ -33,4 +33,10 @@ describe Integer, "#prime?" do
     360207.prime?.should eq(false)
     78542127.prime?.should eq(false)
   end
+
+  it "returns true for prime numbers" do
+    7.prime?.should eq(true)
+    370261.prime?.should eq(true)
+    2147483647.prime?.should eq(true)
+  end
 end
