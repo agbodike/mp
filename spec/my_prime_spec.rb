@@ -53,19 +53,43 @@ describe Integer, "#next_prime" do
     3.next_prime.should eq(5)
   end
 
+  it "returns 5 when called on 4" do
+    4.next_prime.should eq(5)
+  end
+
   it "returns 7 when called on 5" do
     5.next_prime.should eq(7)
+  end
+
+  it "returns 7 when called on 6" do
+    6.next_prime.should eq(7)
   end
 
   it "returns 11 when called on 7" do
     7.next_prime.should eq(11)
   end
 
+  it "returns 11 when called on 8" do
+    8.next_prime.should eq(11)
+  end
+
+  it "returns 11 when called on 9" do
+    9.next_prime.should eq(11)
+  end
+
   it "returns 887 when called on 883" do
     883.next_prime.should eq(887)
   end
 
+  it "returns 887 when called on 884" do
+    884.next_prime.should eq(887)
+  end
+
   it "returns 7919 when called on 7907" do
     7907.next_prime.should eq(7919)
+  end
+
+  it "returns 7919 when called on 7911" do
+    7911.next_prime.should eq(7919)
   end
 end
