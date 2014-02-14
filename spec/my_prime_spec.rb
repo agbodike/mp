@@ -20,4 +20,10 @@ describe Integer, "#prime?" do
     128.prime?.should eq(false)
     101006.prime?.should eq(false)
   end
+
+  it "returns true for numbers divisible by 3" do
+    9.prime?.shoudl eq(false)
+    147.prime?.should eq(false)
+    89787.prime?.should eq(false)
+  end
 end
