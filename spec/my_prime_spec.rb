@@ -22,7 +22,7 @@ describe Integer, "#prime?" do
   end
 
   it "returns true for numbers divisible by 3" do
-    9.prime?.shoudl eq(false)
+    9.prime?.should eq(false)
     147.prime?.should eq(false)
     89787.prime?.should eq(false)
   end
