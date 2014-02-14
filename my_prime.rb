@@ -14,7 +14,7 @@ class Integer
       test_range.each do |test|
         if (self % test == 0) then return false end
       end
-      nil
+      true
     end
   end
 
