@@ -2,3 +2,5 @@ Author::    Afam Agbodike
 Copyright:: Copyright (c) 2014 Afam Agbodike
  
 Multiplies prime numbers
+
+extends the integer class to determine if a number is prime, find the next prime number after a given integer
