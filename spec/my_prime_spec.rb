@@ -26,4 +26,11 @@ describe Integer, "#prime?" do
     147.prime?.should eq(false)
     89787.prime?.should eq(false)
   end
+
+  it "returns false for composite numbers" do
+    8.prime?.should eq(false)
+    91.prime?.should eq(false)
+    360207.prime?.should eq(false)
+    78542127.prime?.should eq(false)
+  end
 end
