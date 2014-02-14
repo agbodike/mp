@@ -43,3 +43,9 @@ describe Integer, "#prime?" do
     2147483647.prime?.should eq(true)
   end
 end
+
+describe Integer, "#next_prime" do
+  it "returns Integer 3 when called on integer 2" do
+    2.next_prime.should eq(3)
+  end
+end
