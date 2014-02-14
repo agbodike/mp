@@ -50,22 +50,22 @@ describe Integer, "#next_prime" do
   end
 
   it "returns 5 when called on 3" do
-    2.next_prime.should eq(3)
+    3.next_prime.should eq(5)
   end
 
   it "returns 7 when called on 5" do
-    2.next_prime.should eq(3)
+    5.next_prime.should eq(7)
   end
 
   it "returns 11 when called on 7" do
-    2.next_prime.should eq(3)
+    7.next_prime.should eq(11)
   end
 
-  it "returns 967 when called on 883" do
-    2.next_prime.should eq(3)
+  it "returns 887 when called on 883" do
+    883.next_prime.should eq(887)
   end
 
-  it "returns 7919 when called on 7829" do
-    2.next_prime.should eq(3)
+  it "returns 7919 when called on 7907" do
+    7907.next_prime.should eq(7919)
   end
 end
