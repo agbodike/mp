@@ -65,7 +65,7 @@ describe Integer, "#next_prime" do
     2.next_prime.should eq(3)
   end
 
-  it "returns 967 when called on 883" do
+  it "returns 7919 when called on 7829" do
     2.next_prime.should eq(3)
   end
 end
