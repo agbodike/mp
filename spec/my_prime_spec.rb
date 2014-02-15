@@ -98,9 +98,12 @@ describe Integer, "#next_prime" do
   end
 end
 
-describe Integer, "#next_primes.first(2)" do
+describe Integer, "#next_primes.first(n)" do
   it "returns [2,3] when called on 1 with parameter 2" do
     1.next_primes.first(2).should eq([2,3])
   end
 
+  it "returns [971,977,983,991,997,1009,1013] when called on 968 with parameter 7" do
+    968.next_primes.first(7).should eq([971,977,983,991,997,1009,1013])
+  end
 end
