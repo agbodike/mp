@@ -45,6 +45,10 @@ describe Integer, "#prime?" do
 end
 
 describe Integer, "#next_prime" do
+  it "returns 2 when called on 1" do
+    1.next_prime.should eq(2)
+  end
+
   it "returns 3 when called on 2" do
     2.next_prime.should eq(3)
   end
