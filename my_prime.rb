@@ -28,4 +28,9 @@ class Integer
   def next_prime
     self.next_series.each { |x| if x.prime? then return x end}
   end
+
+  def next_primes
+    Enumerator.new do |yielder, n: self|
+    loop { yielder.yield(n = n.next_prime) } end.lazy
+  end
 end
