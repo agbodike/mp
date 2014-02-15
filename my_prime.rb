@@ -21,12 +21,11 @@ class Integer
 
   # infinite sequence starting with the next integer
   def next_series
-    Enumerator.new do |yielder, n: (self)|
+    Enumerator.new do |yielder, n: self|
     loop { yielder.yield(n += 1) } end.lazy
   end
 
   def next_prime
     self.next_series.each { |x| if x.prime? then return x end}
   end
-
 end
