@@ -97,3 +97,10 @@ describe Integer, "#next_prime" do
     7911.next_prime.should eq(7919)
   end
 end
+
+describe Integer, "#next_primes.first(2)" do
+  it "returns [2,3] when called on 1 with parameter 2" do
+    1.next_primes.first(2).should eq([2,3])
+  end
+
+end
