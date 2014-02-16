@@ -4,3 +4,13 @@ Copyright:: Copyright (c) 2014 Afam Agbodike
 Multiplies prime numbers
 
 extends the integer class to determine if a number is prime, find the next prime number after a given integer
+
+execution:
+
+ruby multiply_primes.rb [INTEGER]
+if no integer is entered, it defaults to 10
+
+Caveats:
+Prime number test method is not a particularly fast approach, but for small numbers this is it appears to be faster, for an application that needed to identify large quantities of large primes, it would be necessary to improve the algorhytm.
+The command line interface is quite simple. Normally I would use optparse for a more robust command line interface. Additionally I would add an option to select the prime to start with.
+No exception handling
