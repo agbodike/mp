@@ -13,7 +13,7 @@ class Integer
       return true if test_top < 5        # Any composite with a root ceiling less than 5 would have been found above
       test_range = (5..test_top)         # Already tested division by 2&3, start with 5 as it is the next prime
       test_range.each do |test|
-        if (self % test == 0) then return false end
+        return false if (self % test == 0)
       end
       true
     end
@@ -26,7 +26,7 @@ class Integer
   end
 
   def next_prime
-    self.next_series.each { |x| if x.prime? then return x end}
+    self.next_series.each { |x| return x if x.prime?}
   end
 
   def next_primes
