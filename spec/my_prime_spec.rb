@@ -1,4 +1,4 @@
-require '../my_prime.rb'
+require File.expand_path('../my_prime', File.dirname(__FILE__))
 
 describe Integer, "#prime?" do
   it "returns false for less than 2" do
